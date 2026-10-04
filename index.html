@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guía interactiva — Semejanza y Teorema de Tales</title>
+<style>
+:root{--ink:#17324d;--accent:#2563eb;--soft:#eef6ff;--ok:#15803d;--bad:#b91c1c}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:#f5f7fb;line-height:1.55}
+header{background:linear-gradient(135deg,#17324d,#2563eb);color:white;padding:34px 20px;text-align:center}
+main{max-width:1000px;margin:22px auto;padding:0 16px}.card{background:white;border-radius:16px;padding:24px;margin:18px 0;box-shadow:0 5px 18px #00000012}
+h1,h2{margin-top:0}.tag{display:inline-block;background:#dbeafe;color:#1e40af;padding:5px 10px;border-radius:999px;font-weight:bold}
+.formula{font-size:1.15rem;background:var(--soft);padding:14px;border-left:5px solid var(--accent);border-radius:8px;margin:12px 0}
+.example{background:#f8fafc;border:1px solid #dbe4ef;padding:16px;border-radius:10px}
+svg{max-width:100%;height:auto;display:block;margin:10px auto}
+.question{margin:18px 0;padding:16px;background:#fbfdff;border:1px solid #d9e5f2;border-radius:12px}
+button{background:var(--accent);color:white;border:0;border-radius:9px;padding:10px 16px;font-weight:bold;cursor:pointer;margin:5px 3px}
+button:hover{filter:brightness(.95)} input{padding:9px;border:1px solid #b8c6d6;border-radius:8px;width:110px}
+.feedback{font-weight:bold;margin-top:8px}.ok{color:var(--ok)}.bad{color:var(--bad)}
+.progress{height:12px;background:#e5e7eb;border-radius:20px;overflow:hidden}.bar{height:100%;width:0;background:#2563eb}
+.small{font-size:.92rem;color:#526579}
+footer{text-align:center;padding:25px;color:#526579}
+</style>
+</head>
+<body>
+<header>
+  <div class="tag">MATEMÁTICA · 10.º EGB</div>
+  <h1>Semejanza de triángulos y Teorema de Tales</h1>
+  <p>Guía interactiva de aprendizaje y práctica</p>
+</header>
+<main>
+<section class="card">
+<h2>🎯 Objetivo</h2>
+<p>Reconocer triángulos semejantes, establecer proporciones entre lados correspondientes y aplicar el Teorema de Tales para calcular longitudes y resolver situaciones cotidianas.</p>
+<p class="small">Sugerencia: lee cada sección, resuelve los retos y explica siempre por qué tu procedimiento es válido.</p>
+</section>
+
+<section class="card">
+<h2>1. ¿Qué significa que dos figuras sean semejantes?</h2>
+<p>Dos figuras son <b>semejantes</b> cuando conservan la misma forma, aunque su tamaño pueda cambiar. En triángulos semejantes:</p>
+<ul><li>Los ángulos correspondientes son iguales.</li><li>Los lados correspondientes son proporcionales.</li></ul>
+<div class="formula"><b>Razón de semejanza:</b> k = lado de la figura 2 ÷ lado correspondiente de la figura 1</div>
+<div class="example"><b>Ejemplo:</b> Si un triángulo tiene lados 4, 6 y 8 cm y otro tiene 2, 3 y 4 cm, entonces 4/2 = 6/3 = 8/4 = 2. Por tanto, son semejantes.</div>
+</section>
+
+<section class="card">
+<h2>2. Observa la semejanza</h2>
+<svg viewBox="0 0 700 300" role="img" aria-label="Dos triángulos semejantes">
+<polygon points="70,240 300,240 190,55" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+<polygon points="400,240 600,240 505,80" fill="#dbeafe" stroke="#17324d" stroke-width="4"/>
+<text x="165" y="265" font-size="20">6 cm</text><text x="120" y="145" font-size="20">5 cm</text>
+<text x="480" y="265" font-size="20">4 cm</text><text x="438" y="165" font-size="20">3,33 cm</text>
+<text x="320" y="40" font-size="20" fill="#17324d">misma forma → diferente tamaño</text>
+</svg>
+<p><b>Idea clave:</b> no basta con que dos lados sean iguales. Para hablar de semejanza debemos comprobar ángulos correspondientes iguales y/o una condición válida de semejanza.</p>
+</section>
+
+<section class="card">
+<h2>3. Criterios de semejanza</h2>
+<ul>
+<li><b>AA:</b> dos ángulos correspondientes son iguales.</li>
+<li><b>LAL:</b> dos lados correspondientes son proporcionales y el ángulo comprendido es igual.</li>
+<li><b>LLL:</b> los tres pares de lados correspondientes son proporcionales.</li>
+</ul>
+<div class="formula">Si △ABC ∼ △A'B'C', entonces AB/A'B' = BC/B'C' = AC/A'C'</div>
+</section>
+
+<section class="card">
+<h2>4. Teorema de Tales</h2>
+<p>Cuando varias rectas paralelas cortan dos rectas secantes, los segmentos correspondientes que se forman son proporcionales.</p>
+<svg viewBox="0 0 700 330">
+<line x1="110" y1="40" x2="260" y2="290" stroke="#17324d" stroke-width="4"/>
+<line x1="590" y1="40" x2="440" y2="290" stroke="#17324d" stroke-width="4"/>
+<line x1="100" y1="80" x2="600" y2="80" stroke="#2563eb" stroke-width="4"/>
+<line x1="130" y1="145" x2="570" y2="145" stroke="#2563eb" stroke-width="4"/>
+<line x1="165" y1="220" x2="535" y2="220" stroke="#2563eb" stroke-width="4"/>
+<text x="90" y="65" font-size="18">r</text><text x="595" y="65" font-size="18">s</text>
+<text x="325" y="72" font-size="18">paralela 1</text><text x="325" y="137" font-size="18">paralela 2</text><text x="325" y="212" font-size="18">paralela 3</text>
+</svg>
+<div class="formula">AB/A'B' = BC/B'C' = AC/A'C'</div>
+<p>En un triángulo, si trazamos una recta paralela a uno de sus lados, se forman dos triángulos semejantes. Esta es una aplicación muy útil para calcular alturas o distancias que no podemos medir directamente.</p>
+</section>
+
+<section class="card">
+<h2>5. Ejemplo guiado: calcular una longitud</h2>
+<p>En una figura de Tales se conocen <b>AB = 18 cm</b>, <b>BC = 12 cm</b> y <b>B'C' = 11 cm</b>. Calcula <b>A'B'</b>.</p>
+<div class="formula">18/x = 12/11 → 12x = 18×11 → x = 16,5 cm</div>
+<p><b>Conclusión:</b> A'B' = <b>16,5 cm</b>. Observa que la proporción debe relacionar siempre lados correspondientes.</p>
+</section>
+
+<section class="card">
+<h2>6. 🧩 Reto 1 — ¿Son semejantes?</h2>
+<div class="question">
+<p>Triángulo A: 3 cm, 4 cm y 5 cm. Triángulo B: 6 cm, 8 cm y 10 cm.</p>
+<button onclick="check('r1',true)">Sí</button><button onclick="check('r1',false)">No</button>
+<div id="r1" class="feedback"></div>
+</div>
+</section>
+
+<section class="card">
+<h2>7. ✏️ Reto 2 — Encuentra el valor desconocido</h2>
+<div class="question">
+<p>Dos triángulos semejantes tienen lados correspondientes 5 cm y 8 cm. Si otro lado del primero mide 7 cm, ¿cuánto mide el correspondiente del segundo?</p>
+<p><input id="ans2" type="number" step="0.1" placeholder="cm"> <button onclick="numCheck('ans2',11.2,'f2')">Comprobar</button></p>
+<div id="f2" class="feedback"></div>
+</div>
+</section>
+
+<section class="card">
+<h2>8. 📏 Reto 3 — Aplicación de Tales</h2>
+<div class="question">
+<p>Una varilla de 1,5 m proyecta una sombra de 2 m. Al mismo tiempo, un árbol proyecta una sombra de 8 m. Suponiendo que los rayos del Sol forman el mismo ángulo, ¿cuál es la altura del árbol?</p>
+<p><input id="ans3" type="number" step="0.1" placeholder="m"> <button onclick="numCheck('ans3',6,'f3')">Comprobar</button></p>
+<div id="f3" class="feedback"></div>
+</div>
+</section>
+
+<section class="card">
+<h2>9. 🧠 Reto final — Explica tu procedimiento</h2>
+<div class="question">
+<p>Un estudiante afirma: “Si dos triángulos tienen un lado de igual longitud, entonces son semejantes”.</p>
+<button onclick="check('r4',false)">Verdadero</button><button onclick="check('r4',true)">Falso</button>
+<div id="r4" class="feedback"></div>
+<p><b>Escribe en tu cuaderno:</b> ¿qué información adicional necesitarías para justificar la semejanza?</p>
+</div>
+</section>
+
+<section class="card">
+<h2>📌 Evidencia para Classroom</h2>
+<ol>
+<li>Realiza un esquema de dos triángulos semejantes y rotula sus lados correspondientes.</li>
+<li>Plantea una proporción correctamente.</li>
+<li>Resuelve un problema aplicando semejanza o Tales.</li>
+<li>Escribe una justificación de 3–5 líneas explicando por qué el procedimiento es válido.</li>
+</ol>
+<h3>Autoevaluación</h3>
+<div class="progress"><div id="bar" class="bar"></div></div>
+<p id="score">Completa los retos para ver tu progreso.</p>
+</section>
+</main>
+<footer>Guía de aprendizaje · Semejanza y Teorema de Tales</footer>
+<script>
+let done=0,total=4;
+function progress(){document.getElementById('bar').style.width=(done/total*100)+'%';document.getElementById('score').textContent='Progreso: '+done+'/'+total+' retos completados.';}
+function mark(id,msg,ok){const e=document.getElementById(id);e.textContent=msg;e.className='feedback '+(ok?'ok':'bad');}
+function check(id,ok){mark(id,ok?'¡Correcto! Muy bien.':'Revisa la idea de proporcionalidad y correspondencia.',ok);if(ok){done=Math.min(total,done+1);progress();}}
+function numCheck(input,val,out){const x=parseFloat(document.getElementById(input).value);const ok=Math.abs(x-val)<0.11;mark(out,ok?'¡Correcto!':'Aún no. Revisa la proporción y vuelve a intentarlo.',ok);if(ok){done=Math.min(total,done+1);progress();}}
+progress();
+</script>
+</body>
+</html>
